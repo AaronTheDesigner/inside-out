@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background: url('../public/assets/banner.png');
+  background-size: cover;
+}
+
+.services {
+  background: url('../public/assets/house.jpg');
+  background-size: cover;
+}
+
+/* .image-container {
+  width: 100%;
+}
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+} */
