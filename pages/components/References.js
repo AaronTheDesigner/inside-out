@@ -5,7 +5,7 @@ const References = () => {
   return (
     <div className=' bg-slate-400 py-4 sm:px-10 md:px-15 lg:px-20'>
         <h1 className="m-2 text-3xl text-center font-bold text-blue-900 md:text-4xl lg:text-6xl">
-            You're in good company
+            You are in good company
         </h1>
         <div className="flex flex-col w-full my-6 gap-5 items-center h-full">
             <div className="flex justify-center w-1/12 items-center gap-5">
@@ -68,7 +68,7 @@ const References = () => {
                             objectFit='contain'                   
                         />
                         <span className="italic">
-                            "this will be a quote from the customer. it will be shortened a bit for readability"
+                            this will be a quote from the customer. it will be shortened a bit for readability
                         </span>
                     </div>
             </div>
