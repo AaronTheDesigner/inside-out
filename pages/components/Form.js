@@ -58,7 +58,7 @@ const Form = () => {
                 </label>
 
                 <div className='mt-6'>
-                    <Button/>
+                    
                 </div>
             </form>
         </div>
