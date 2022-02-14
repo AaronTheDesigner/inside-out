@@ -49,6 +49,7 @@ a {
 
 .logoimage, .moto, .topcta, .topscroll {
   animation-name: slidedown;
+  animation-delay: .5s;
   animation-duration: 2s;
 }
 
