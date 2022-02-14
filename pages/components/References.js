@@ -1,12 +1,25 @@
 import React from 'react'
 import Image from 'next/image'
+import { useInView } from 'react-intersection-observer'
+import { motion } from 'framer-motion'
 
-const References = () => {
+const References = (props) => {
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0
+        })
   return (
     <div className=' bg-slate-400 py-4 sm:px-10 md:px-15 lg:px-20'>
-        <h1 className="m-2 text-3xl text-center font-bold text-blue-900 md:text-4xl lg:text-6xl">
+        <motion.h1 
+            className="m-2 text-3xl text-center font-bold md:text-4xl lg:text-6xl"
+            ref={ref}
+            style={{
+                color: inView ? 'black' : 'blue',
+                transition: '2s 2s'
+            }}
+            >
             You are in good company
-        </h1>
+        </motion.h1>
         <div className="flex flex-col w-full my-6 gap-5 items-center h-full">
             <div className="flex justify-center w-1/12 items-center gap-5">
                 <div className="flex flex-col justify-center items-center">

@@ -38,3 +38,56 @@ a {
   position: relative !important;
   height: unset !important;
 } */
+
+.poster {
+  animation-duration: 2s;
+  animation-name: slidedown;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-color: #214E85;
+}
+
+.logoimage, .moto, .topcta, .topscroll {
+  animation-name: slidedown;
+  animation-duration: 2s;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translate(0,-200%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+.primary-dark {
+  color: #0C3759;
+}
+
+.primary-light {
+  color: #214E85;
+}
+
+.bg-primary-dark {
+  background-color: #0C3759;
+}
+
+.bg-primary-light {
+  background-color: #214E85;
+}
+
+.shadow {
+  filter: drop-shadow(10px, 10px, 3px, rgba(0, 0, 0, 1));
+}
+
+.text-shadow {
+  text-shadow: 1px 3px 5px rgba(29, 29, 29, 0.623);
+}
+
+.box-shadow {
+  box-shadow: 1px 3px 5px rgba(29, 29, 29, 0.623);
+}
