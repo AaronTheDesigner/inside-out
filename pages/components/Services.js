@@ -30,7 +30,7 @@ const [ref, inView] = useInView({
             </div>            
             <div className="service flex flex-col max-w-xl p-3 text-blue-900">
                 <h1 className=' text-2xl md:text-3xl font-bold'>Maintenance</h1>
-                <p className='text-lg md:text-xl'>We know it&#59;s one of the things we don&#59;t want to deal with, but don&#59;t worry about it, we&#59;ve got you covered. Let us help you with the maintenance of your house, apartments, or neighborhood- from changing a light bulb to pressure washing you whole house.</p>
+                <p className='text-lg md:text-xl'>We know it&#39;s one of the things we don&#39;t want to deal with, but don&#39;t worry about it, we&#39;ve got you covered. Let us help you with the maintenance of your house, apartments, or neighborhood- from changing a light bulb to pressure washing you whole house.</p>
                 <div className='mt-6'>
                     <Button/>
                 </div>
