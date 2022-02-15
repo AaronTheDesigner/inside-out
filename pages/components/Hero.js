@@ -28,7 +28,7 @@ const Hero = () => {
                        
           </div>
           <div className="text-center capitalize">
-            <p className="moto primary-dark uppercase text-xl md:text-2xl lg:text-4xl text-shadow">
+            <p className="moto primary-light uppercase text-xl md:text-2xl lg:text-4xl text-shadow">
               Precise Painting and Home Improvements
             </p>
           </div>
