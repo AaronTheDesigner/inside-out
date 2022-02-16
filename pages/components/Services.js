@@ -40,10 +40,20 @@ const [ref, inView] = useInView({
     <section 
         id="services" 
         className="services border-b-4 border-blue-900 primary-dark py-4 sm:px-10 md:px-15 lg:px-20"
+        ref={ref}
+        style={{
+            
+        }}
     >
-        <h1 className="m-2 text-3xl text-center font-bold primary-dark md:text-4xl lg:text-6xl">
-            Bring new life to your home
-        </h1>
+        <motion.h1 
+            className="m-2 text-3xl header-shadow text-center uppercase font-bold primary-dark md:text-4xl lg:text-6xl"
+            ref={ref}
+            style={{
+
+            }}
+        >
+            Bring new <motion.span ref={ref} style={{ color: inView ? '#EBD254' : '#0C3759', transition: '1s 1s' }}>life</motion.span> to your home
+        </motion.h1>
         
         <div className="flex gap-7 flex-wrap justify-center my-6">
             <Service 

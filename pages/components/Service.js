@@ -21,7 +21,7 @@ const Service = (props) => {
         }}
     >
         <h1 className=' text-2xl md:text-3xl font-bold text-shadow-light'>{title}</h1>
-        <p className='text-lg md:text-xl text-shadow-light'>{description}</p>
+        <p className='text-lg md:text-2xl text-shadow-light'>{description}</p>
         <div className='mt-6'>
             <Button/>
         </div>
