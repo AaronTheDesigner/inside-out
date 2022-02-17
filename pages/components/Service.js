@@ -5,7 +5,9 @@ import { motion } from 'framer-motion'
 
 const Service = (props) => {
 
-    const { title, description } = props;
+    const { title, description, link } = props;
+
+    console.log(link)
 
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -20,10 +22,10 @@ const Service = (props) => {
             transition: "1s 1s"
         }}
     >
-        <h1 className=' text-2xl md:text-3xl font-bold text-shadow-light'>{title}</h1>
+        <h1 className=' text-2xl md:text-3xl font-bold text-shadow-light mb-3'>{title}</h1>
         <p className='text-lg md:text-2xl text-shadow-light'>{description}</p>
         <div className='mt-6'>
-            <Button/>
+            <Button name={link}/>
         </div>
     </motion.div>
   )

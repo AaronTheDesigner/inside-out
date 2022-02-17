@@ -33,7 +33,7 @@ const Hero = () => {
             </p>
           </div>
           <div className='topcta mt-6'>
-            <Button/>
+            <Button name='Contact'/>
           </div>
           <div className='topscroll mt-7 mb-5'>
               <a href="#services">

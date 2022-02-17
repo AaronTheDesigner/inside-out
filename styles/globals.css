@@ -53,7 +53,13 @@ a {
   border-color: #214E85;
 }
 
-.logoimage, .moto, .topcta, .topscroll {
+.logoimage {
+  animation-name: slidedown;
+  animation-delay: .8s;
+  animation-duration: 2.5s;
+}
+
+.moto, .topcta, .topscroll {
   animation-name: slidedown;
   animation-delay: .5s;
   animation-duration: 2s;
