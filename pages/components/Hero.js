@@ -11,7 +11,7 @@ const Hero = () => {
   })
   return (
     <div className="hero grid place-items-center border-b-4 border-blue-900">
-        <div className="poster h-screen flex flex-col border-x-4 border-blue-900 gap-y-6 justify-center items-center bg-white w-4/5 sm:w-3/12 md:1/5 drop-shadow-2xl">
+        <div className="poster flex flex-col border-x-4 border-blue-900 gap-y-6 justify-center items-center bg-white w-4/5 sm:w-3/12 md:1/5 drop-shadow-2xl">
           <div className="w-full">
             <div className="w-full">
                 <Image 

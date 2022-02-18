@@ -44,7 +44,7 @@ const [ref, inView] = useInView({
   return (
     <section 
         id="services" 
-        className="services border-b-4 border-blue-900 primary-dark py-4 sm:px-10 md:px-15 lg:px-20"
+        className="services border-b-4 border-primary-dark primary-dark py-4 sm:px-10 md:px-15 lg:px-20"
         ref={ref}
         style={{
             
