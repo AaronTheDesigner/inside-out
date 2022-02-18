@@ -48,7 +48,7 @@ const References = (props) => {
                   transition: '1.5s .5s'
               }}  
             >
-                <p>Obed (Inside Out Home Improvements), I just wanted to say a well deserved "thank you" for the absolutely fantastic job your guy(s) did on my new floors! Ron was great. He went above and beyond ALL my expectations. He was timely, courteous and most of all, meticulously detailed. You communicated well from the beginning and throughout the whole process, very reasonable, very respectful and overall wonderful to work with. I have and will not hesitate to recommend you to anyone who asks. Thank you!!!</p>
+                <p>Obed (Inside Out Home Improvements), I just wanted to say a well deserved thank you for the absolutely fantastic job your guy(s) did on my new floors! Ron was great. He went above and beyond ALL my expectations. He was timely, courteous and most of all, meticulously detailed. You communicated well from the beginning and throughout the whole process, very reasonable, very respectful and overall wonderful to work with. I have and will not hesitate to recommend you to anyone who asks. Thank you!!!</p>
                 <motion.p className="name ml-5" ref={ref} style={{ color: inView ? '#EBD254' : 'white', transition: '1s 2s' }}>- Robin Kuehner</motion.p>
             </motion.div>
         </div>
