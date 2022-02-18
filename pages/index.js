@@ -8,7 +8,7 @@ import Services from './components/Services'
 import References from './components/References'
 import Form from './components/Form'
 import Footer from './components/Footer'
-import Gallery from './components/Gallery'
+//import Gallery from './components/Gallery'
 
 export default function Home() {
   return (
