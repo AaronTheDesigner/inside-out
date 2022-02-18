@@ -19,7 +19,7 @@ const References = (props) => {
               style={{
                   transform: inView ? 'translate(0, 0)' : 'translate(-100%, 0)',
                   opacity: inView ? '1' : '0',
-                  transition: '1.5s 1s'
+                  transition: '1.5s .6s'
               }}  
             >
                 <p>Over the past three weeks we have had rather extensive repair, updating, painting and flooring done in our 1985 home. The results are beyond stunning. Thanks to Mr. Obed Arguedas of Inside Out Home Improvements, our home has been updated and modernized to a monumental degree with exquisite workmanship and attention to detail.</p>
@@ -32,7 +32,7 @@ const References = (props) => {
               style={{
                   transform: inView ? 'translate(0, 0)' : 'translate(-100%, 0)',
                   opacity: inView ? '1' : '0',
-                  transition: '1.5s 1s'
+                  transition: '1.5s .2s'
               }}  
             >
                 <p>Obed did an awesome job on my back deck! He pressure washed, sanded peeling parts, replaced some rotted boards, and re-stained it all in two days. He was on time, reasonably priced, and very communicative. We plan to use him again for some pressure washing, and would highly recommend his work! </p>
@@ -45,7 +45,7 @@ const References = (props) => {
               style={{
                   transform: inView ? 'translate(0, 0)' : 'translate(-100%, 0)',
                   opacity: inView ? '1' : '0',
-                  transition: '1.5s 1s'
+                  transition: '1.5s .5s'
               }}  
             >
                 <p>Obed (Inside Out Home Improvements), I just wanted to say a well deserved "thank you" for the absolutely fantastic job your guy(s) did on my new floors! Ron was great. He went above and beyond ALL my expectations. He was timely, courteous and most of all, meticulously detailed. You communicated well from the beginning and throughout the whole process, very reasonable, very respectful and overall wonderful to work with. I have and will not hesitate to recommend you to anyone who asks. Thank you!!!</p>

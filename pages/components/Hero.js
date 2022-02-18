@@ -11,7 +11,7 @@ const Hero = () => {
   })
   return (
     <div className="hero grid place-items-center border-b-4 border-blue-900">
-        <div className="poster flex flex-col border-x-4 border-blue-900 gap-y-6 justify-center items-center bg-white w-4/5 sm:w-3/12 md:1/5 drop-shadow-2xl">
+        <div className="poster flex flex-col border-x-4 border-blue-900 gap-y-6 justify-center items-center bg-white w-4/5 sm:w-6/12 md:w-4/12 lg:w-3/12 drop-shadow-2xl">
           <div className="w-full">
             <div className="w-full">
                 <Image 
@@ -28,12 +28,14 @@ const Hero = () => {
                        
           </div>
           <div className="text-center capitalize">
-            <p className="moto primary-light uppercase text-xl md:text-2xl lg:text-4xl text-shadow">
+            <p className="moto px-2 primary-light uppercase text-xl md:text-2xl lg:text-3xl text-shadow">
               Precise Painting and Home Improvements
             </p>
           </div>
           <div className='topcta mt-6'>
-            <Button name='Contact'/>
+            <a href="#contact">
+              <Button name='Contact'/>
+            </a>            
           </div>
           <div className='topscroll mt-7 mb-5'>
               <a href="#services">

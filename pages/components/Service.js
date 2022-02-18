@@ -19,11 +19,11 @@ const Service = (props) => {
         ref={ref}
         style={{
             opacity: inView ? "1" : "0",
-            transition: "1s 1s"
+            transition: "1s .5s"
         }}
     >
-        <h1 className=' text-2xl md:text-3xl font-bold text-shadow-light mb-3'>{title}</h1>
-        <p className='text-lg md:text-2xl text-shadow-light'>{description}</p>
+        <h1 className='text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-shadow-light mb-3'>{title}</h1>
+        <p className='text-xs sm:text-sm md:text-base lg:text-lg text-shadow-light'>{description}</p>
         <div className='mt-6'>
             <Button name={link}/>
         </div>
