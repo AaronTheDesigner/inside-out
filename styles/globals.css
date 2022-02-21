@@ -25,6 +25,7 @@ a {
   background-size: cover;
   border-bottom-width: 4px;
   border-color: #0C3759;
+  z-index: 1;
 }
 
 .services {
@@ -47,10 +48,11 @@ a {
 
 .poster {
   animation-duration: 2s;
+  z-index: 1;
   animation-name: slidedown;
   border-left-width: 4px;
   border-right-width: 4px;
-  border-color: #214E85;
+  border-color: #0C3759;
 }
 
 .logoimage {
@@ -135,9 +137,11 @@ a {
   overflow: hidden;
   position: absolute;
   list-style: none;
-  border-radius:3px;
+  border-radius:6px;
+  border: 2px solid #f6e073;
   margin: auto;
-  height: 425px;  
+  height: 425px; 
+  box-shadow: 2px 4px 10px rgba(49, 49, 49, 0.616); 
 }
 
 
@@ -146,8 +150,8 @@ a {
   width: 190px;
   height: 425px;
   float: left;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid #f6e073;
+  border-right: 1px solid #f6e073;
   transition: all 0.7s;
 }
 
@@ -185,7 +189,7 @@ a {
 
 .gal-image {
   filter: blur(4px); 
-  transition: all .4s;
+  transition: all .6s;
 }
 
 .gal-image:hover {
@@ -193,24 +197,25 @@ a {
 }
 
 .gallery ul {
-  height: 145px; 
+  height: 140px; 
 }  
 
 .gallery li {
-  width: 50px;
-  height: 145px;
+  width: 45px;
+  height: 140px;
 }
 
 .gallery ul:hover li {
-  width:20px;
+  width:15px;
 }
 
 .gallery ul li:hover {
-  width: 200px;
+  width: 169px;
 }
 
 .gal-label {
   padding: 5px;
+  font-size: .7rem;
 }
 
 @media screen and (min-width: 640px) {
@@ -219,7 +224,7 @@ a {
   }  
   
   .gallery li {
-    width: 50px;
+    width: 52px;
     height: 145px;
   }
 
@@ -233,6 +238,7 @@ a {
 
   .gal-label {
     padding: 5px;
+    font-size: 1rem;
   }
 }
 
@@ -304,3 +310,93 @@ a {
     padding: 10px;
   }
 }
+
+.fullnav {
+  border-bottom: 3px solid #0C3759;
+  box-shadow: 0px 2px 7px rgba(44, 44, 44, 0.616);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  animation-name: navin;
+  animation-delay: .1s;
+  animation-duration: 2s;
+}
+
+.logo {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 3s;
+}
+
+.linkone {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 3.5s;
+}
+
+.linktwo {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 4s;
+}
+
+.linkthree {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 4.5s;
+}
+
+.linkfour {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 5s;
+}
+
+.cta-call {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 5.5s;
+}
+
+.cta-contact {
+  animation-name: reveal;
+  animation-delay: 0;
+  animation-duration: 6s;
+}
+
+@keyframes navin {
+  from {
+    transform: translate(0,-200%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidelink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-100%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
