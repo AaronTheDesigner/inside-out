@@ -20,12 +20,12 @@ const [ref, inView] = useInView({
         >
             see the <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>results</motion.span>
         </motion.h1>
-        <p className='text-center font-semibold text-lg m-4 text-gray-200 w-2/5 mx-auto'>On every project, our number one goal is client satisfaction. We will listen closely to your vision for your home to help that vision come to fruition.</p>
-        <div className="gallery">
-            <ul>
+        <p className='text-center text-xs sm:text-sm md:text-base lg:text-lg w-3/5 xl:w-2/5 font-semibold text-gray-200  mx-auto'>On every project, our number one goal is client satisfaction. We will listen closely to your vision for your home to help that vision come to fruition.</p>
+        <div className="gallery h-60 lg:h-80 xl:h-96">
+            <ul className=''>
                 <li>
                     <span className='gal-label'>
-                        Flooring
+                        Flooring 
                     </span>
                     <Image
                         src='/assets/flooring_1.jpg'
