@@ -10,7 +10,7 @@ const subOne = {
   description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur odit ea veritatis impedit ut, illum optio voluptatem doloremque nemo illo inventore. Maxime accusantium vitae illum aliquam doloremque harum nemo amet!'
 }
 
-const painting = () => {
+const Painting = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0
@@ -52,4 +52,4 @@ const painting = () => {
   )
 }
 
-export default painting
+export default Painting
