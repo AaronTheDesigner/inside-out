@@ -324,6 +324,15 @@ a {
   animation-duration: 2s;
 }
 
+.mobilenav {
+  border-bottom: 3px solid #0C3759;
+  box-shadow: 0px 2px 7px rgba(44, 44, 44, 0.616);
+}
+
+.mobile-slide {
+  transform: translateY(-11.5rem);
+}
+
 .logo {
   animation-name: reveal;
   animation-delay: 0;
