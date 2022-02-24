@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const MobileNav = () => {
     const [menu, setMenu] = useState(false);
-    console.log(menu)
 
     const toggleMenu = () => {
         menu ? setMenu(false) : setMenu(true)
