@@ -30,27 +30,27 @@ const GalleryTwo = () => {
             <div className="card card-tall card-wide" style={{
                 backgroundImage: `url('/assets/flooring_1.jpg')`
             }}>
-                <span className='uppercase text-center whitespace-wrap w-0 text-xs sm:text-2xl'>Flooring</span>
+                <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Flooring</span>
             </div>
             <div className="card card-tall" style={{
                 backgroundImage: `url('/assets/painting_1.jpg')`
             }}>
-                <span className='uppercase text-center whitespace-wrap w-0 text-xs sm:text-2xl'>Painting</span>
+                <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Painting</span>
             </div>
             <div className="card card-wide" style={{
                 backgroundImage: `url('/assets/maintenance_1.jpg')`
             }}>
-                <span className='uppercase text-center whitespace-wrap w-0 text-xs sm:text-2xl'>Maintenance</span>
+                <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Maintenance</span>
             </div>
             <div className="card card-tall card-wide" style={{
                 backgroundImage: `url('/assets/bathroom_1.jpg')`
             }}>
-                <span className='uppercase text-center whitespace-wrap w-0 text-xs sm:text-2xl'>Bathroom Remodeling</span>
+                <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Bathroom Remodeling</span>
             </div>
             <div className="card card-wide" style={{
                 backgroundImage: `url('/assets/deck_1.jpg')`
             }}>
-                <span className='uppercase text-center whitespace-wrap w-0 text-xs sm:text-2xl'>Deck Restoration</span>
+                <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Deck Restoration</span>
             </div>
             {/* <div className="card card-tall">
 
