@@ -10,6 +10,7 @@ import References from './components/References'
 import Form from './components/Form'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
+import GalleryTwo from './components/GalleryTwo'
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
       <Nav />
       <Hero/>           
       <Services />
-      <Gallery /> 
+      <GalleryTwo />
       <References />      
       <Form />
       <Footer />

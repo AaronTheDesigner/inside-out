@@ -4,6 +4,20 @@ import SubCard from './components/SubCard';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
+const floorTypes = () => {
+  return (
+    <ul>
+      <li>Laminate</li>
+      <li>Carpet</li>
+      <li>Porcelain and Ceramic</li>
+      <li>LPV and LVT</li>
+      <li>Stairs</li>
+      <li>Vinyl</li>
+      <li>Engineer Hardwood</li>
+    </ul>
+  )
+}
+
 const subOne = {
   name: 'subservice',
   image: '/assets/logo.png',
@@ -28,7 +42,7 @@ const Flooring = () => {
           <motion.span ref={ref} style={{ color: inView ? '#EBD254' : '#0C3759', transition: '1s 1s' }}>Flooring</motion.span>
         </h1>
         <p className='p-4 text-xs text-center sm:text-sm md:text-base lg:text-lg'>
-        Flooring should be functional but it also adds style and comfort to a room. You might want ceramic tile in your kitchen for easy clean ups, a hardwood style in your living room, and carpet in your bedroom for comfort or you may choose to use the same kind of flooring throughout your home.
+          Flooring should be functional but it also adds style and comfort to a room. You might want ceramic tile in your kitchen for easy clean ups, a hardwood style in your living room, and carpet in your bedroom for comfort or you may choose to use the same kind of flooring throughout your home. 
         </p>
       </div>
       <div className="flex flex-wrap justify-center gap-10 px-4 sm:px-10 md:px-15 lg:px-20">
@@ -41,12 +55,7 @@ const Flooring = () => {
           name={subOne.name}
           image={subOne.image}
           description={subOne.description}
-        />        
-        <SubCard 
-          name={subOne.name}
-          image={subOne.image}
-          description={subOne.description}
-        />        
+        />       
       </div>
     </div>
   )

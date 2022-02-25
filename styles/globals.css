@@ -408,4 +408,64 @@ a {
   }
 }
 
+.cta-contact {
+  border: 2px solid #0C3759;
+}
 
+.image-mosaic {
+  display: grid;
+  gap: .3rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-auto-rows: 90px;
+  background: #214E85;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 3rem;
+  color: #f6e073;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+.card:hover {
+  transform: scale(150%,150%);
+  outline: thick solid #214E85;
+}
+
+.card:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card span {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+}

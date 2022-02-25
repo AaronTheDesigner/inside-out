@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Form = () => {
   return (
-    <div id="contact" className='p-2 sm:px-10 md:px-15 lg:px-20'>
+    <div id="form" className='p-2 sm:px-10 md:px-15 lg:px-20'>
         <h1 className="m-10 text-3xl text-center font-bold text-blue-900 md:text-4xl lg:text-6xl">
             Get a Free Estimate
         </h1>

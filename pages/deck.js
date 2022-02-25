@@ -5,9 +5,15 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
 const subOne = {
-  name: 'subservice',
+  name: 'repairs',
   image: '/assets/logo.png',
-  description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur odit ea veritatis impedit ut, illum optio voluptatem doloremque nemo illo inventore. Maxime accusantium vitae illum aliquam doloremque harum nemo amet!'
+  description: `We offer deck restoration starting with the necessary repairs that your deck might need. We change boards and railings, making your deck  sturdy and firm. We offer complete restoration if necessary. `
+}
+
+const subTwo = {
+  name: 'staining',
+  image: '/assets/logo.png',
+  description: `Wood stains tend to peel for two reasons: over application or poor adhesion. We know and implement the preparation and staining processes well so that your new wood stain will last as long as possible. `
 }
 
 const Deck = () => {
@@ -38,15 +44,10 @@ const Deck = () => {
           description={subOne.description}
         />        
         <SubCard 
-          name={subOne.name}
-          image={subOne.image}
-          description={subOne.description}
-        />        
-        <SubCard 
-          name={subOne.name}
-          image={subOne.image}
-          description={subOne.description}
-        />        
+          name={subTwo.name}
+          image={subTwo.image}
+          description={subTwo.description}
+        />   
       </div>
     </div>
   )
