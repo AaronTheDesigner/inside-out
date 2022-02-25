@@ -22,7 +22,7 @@ const GalleryTwo = () => {
         >
             see the <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>results</motion.span>
         </motion.h1>
-            <p className='text-white text-center'>
+            <p className='text-white text-center p-4 text-xs sm:text-sm md:text-base lg:text-lg'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati deleniti, soluta perspiciatis eos autem officia quia porro voluptatem temporibus dolor sit alias, debitis accusamus, voluptatibus corrupti quaerat magni nulla?
             </p>
         </div>
