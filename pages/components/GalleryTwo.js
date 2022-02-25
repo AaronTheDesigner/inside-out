@@ -11,8 +11,8 @@ const GalleryTwo = () => {
 
 
   return (
-    <div className='flex flex-col bg-primary-dark justify-center items-center py-4 px-10 md:px-20 lg:px-20'>
-        <div className='flex flex-col h-full mb-6 w-1/2'>
+    <div className='flex flex-col bg-primary-dark justify-center items-center py-4 sm:px-10 md:px-20 lg:px-20'>
+        <div className='flex flex-col h-full mb-6 m:w-1/2'>
         <motion.h1 
             className="m-2 text-3xl header-shadow text-center uppercase font-bold text-gray-200 md:text-4xl lg:text-6xl"
             ref={ref}
@@ -26,7 +26,7 @@ const GalleryTwo = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati deleniti, soluta perspiciatis eos autem officia quia porro voluptatem temporibus dolor sit alias, debitis accusamus, voluptatibus corrupti quaerat magni nulla?
             </p>
         </div>
-        <div className="image-mosaic w-1/2">
+        <div className="image-mosaic m:w-1/2">
             <div className="card card-tall card-wide" style={{
                 backgroundImage: `url('/assets/flooring_1.jpg')`
             }}>
