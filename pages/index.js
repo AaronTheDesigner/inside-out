@@ -11,18 +11,16 @@ import Form from './components/Form'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
 import GalleryTwo from './components/GalleryTwo'
+import Layout from './components/Layout'
 
 
 export default function Home() {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <Hero/>           
       <Services />
       <GalleryTwo />
-      <References />      
-      <Form />
-      <Footer />
-    </div>
+      <References /> 
+    </Layout> 
   )
 }

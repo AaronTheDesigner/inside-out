@@ -3,6 +3,7 @@ import Image from 'next/image';
 import SubCard from './components/SubCard';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import Layout from './components/Layout';
 
 const subOne = {
   name: 'subservice',
@@ -17,8 +18,9 @@ const Bathroom = () => {
     })
 
   return (
-    <div className="flex flex-col py-4 sm:px-10 md:px-15 lg:px-20" style={{
-      backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 1) 80%), url('/assets/house.jpg');`,
+    <Layout>
+      <div className="flex flex-col py-4 sm:px-10 md:px-15 lg:px-20" style={{
+      backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 1) 80%), url('/assets/house.jpg')`,
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center'
@@ -49,6 +51,8 @@ const Bathroom = () => {
         />        
       </div>
     </div>
+    </Layout>
+    
   )
 }
 
