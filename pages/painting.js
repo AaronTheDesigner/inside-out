@@ -121,8 +121,26 @@ const Painting = () => {
                 <div className="card card-wide" style={{
                     backgroundImage: `url('/assets/painting_7.jpg')`
                 }}></div>
-                <div className="card card-wide" style={{
+                <div className="card card-tall" style={{
                     backgroundImage: `url('/assets/painting_8.jpg')`
+                }}></div>
+                <div className="card card-tall" style={{
+                    backgroundImage: `url('/assets/painting_9.jpg')`
+                }}></div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/painting_10.jpg')`
+                }}></div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/painting_11.jpg')`
+                }}></div>
+                <div className="card card-tall" style={{
+                    backgroundImage: `url('/assets/painting_12.jpg')`
+                }}></div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/painting_13.jpg')`
+                }}></div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/painting_14.jpg')`
                 }}></div>
             </div>
           </div>
