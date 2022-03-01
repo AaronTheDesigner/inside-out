@@ -1,5 +1,6 @@
 import React from 'react'
 import pic from '../../public/assets/house.jpg'
+import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 
@@ -11,18 +12,25 @@ const GalleryTwo = () => {
 
 
   return (
-    <div className='flex flex-col lg:flex-row bg-primary-dark justify-center items-center py-4 px-10 sm:px-10 md:px-20 lg:px-20'>
+    <div className='flex flex-col lg:flex-row bg-gray-100 justify-center items-center py-4 px-10 sm:px-10 md:px-20 lg:px-20'>
+        <div className='w-1/5'>
+            <Image
+                src='/assets/logo.png'
+                height={150}
+                width={130}
+            />
+        </div>
         <div className='flex flex-col h-full mb-6 lg:w-1/2'>
         <motion.h1 
-            className="m-2 text-3xl header-shadow text-center uppercase font-bold text-gray-200 md:text-4xl lg:text-6xl lg:text-left lg:w-full"
+            className="primary-dark m-2 text-3xl header-shadow text-center uppercase font-bold text-gray-200 md:text-4xl lg:text-6xl lg:text-left lg:w-full"
             ref={ref}
             style={{
 
             }}
         >
-            see the <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>results</motion.span>
+            about <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>us</motion.span>
         </motion.h1>
-            <p className='text-white text-center p-4 text-xs sm:text-sm md:text-base lg:text-lg lg:text-left'>
+            <p className='primary-dark text-center p-4 text-xs sm:text-sm md:text-base lg:text-lg lg:text-left'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati deleniti, soluta perspiciatis eos autem officia quia porro voluptatem temporibus dolor sit alias, debitis accusamus, voluptatibus corrupti quaerat magni nulla?
             </p>
         </div>

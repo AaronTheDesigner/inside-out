@@ -17,9 +17,9 @@ import Layout from './components/Layout'
 export default function Home() {
   return (
     <Layout>
-      <Hero/>           
-      <Services />
-      <GalleryTwo />
+      <Hero/> 
+      <GalleryTwo />          
+      <Services />      
       <References /> 
     </Layout> 
   )
