@@ -21,7 +21,7 @@ const Hero = () => {
 
               }}
             >
-                precise <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>painting</motion.span>
+                 <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>precise painting</motion.span>
             </motion.h1>
             <motion.h1 
               className="m-2 text-3xl header-shadow text-center uppercase font-bold text-gray-200 md:text-4xl lg:text-6xl lg:text-left lg:w-full"
@@ -30,13 +30,13 @@ const Hero = () => {
 
               }}
             >
-                home <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>improvements</motion.span>
+                 <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>home improvement</motion.span>
             </motion.h1>
           </div>
           <div className='topcta mt-6'>
               <Button 
                 name='Contact'
-                href='#contact'
+                href='#form'
               />           
           </div>
           <div className=' mb-36 topscroll mt-24'>

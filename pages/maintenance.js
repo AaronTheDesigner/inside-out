@@ -12,6 +12,26 @@ const subOne = {
   Let us help you with the maintenance of your house, apartments, or neighborhood- from changing a light bulb to pressure washing you whole house.`
 }
 
+const maintenanceTypes = () => {
+  return (
+    <ul className='uppercase font-bold primary-dark pl-4 flex flex-wrap'>
+      <li className='m-5'>Gutter Cleaning</li>
+      <li className='m-5'>Pressure Washing</li>
+      <li className='m-5'>Window Cleaning</li>
+      <li className='m-5'>Light Bulbs</li>
+      <li className='m-5'>Ceiling Fans</li>
+      <li className='m-5'>Light Fixtures</li>
+      <li className='m-5'>Sheetrock and Drywall</li>
+      <li className='m-5'>Plumbing</li>
+      <li className='m-5'>Wood Repairs</li>
+      <li className='m-5'>Gutter Cleaning</li>
+      <li className='m-5'>Ladder Work</li>
+      <li className='m-5'>Door Replacement</li>
+      <li className='m-5'>Toilet Replacement</li>
+    </ul>
+  )
+}
+
 const Maintenance = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -30,8 +50,8 @@ const Maintenance = () => {
         <div className="flex flex-col flex-wrap py-4 sm:px-10 md:px-15 lg:px-20 xl:flex-row" style={{
           
         }}>
-          <div className="flex flex-col xl:w-7/12">
-            <div className='flex flex-col lg:items-start'>
+          <div className="flex flex-col w-full items-center">
+            <div className='flex flex-col items-center'>
               <h1 className='m-2 text-3xl header-shadow text-center uppercase font-bold primary-dark md:text-4xl lg:text-6xl lg:pl-2'>
                 <motion.span ref={ref} style={{ color: inView ? '#EBD254' : '#0C3759', transition: '1s 1s' }}>Maintenance</motion.span>
               </h1>
@@ -39,42 +59,12 @@ const Maintenance = () => {
                 {subOne.description}
               </p>
             </div>
+            <div className=" lg:w-3/5">
+              {maintenanceTypes()}
+            </div>
             
           </div>
-          <div className="p-5 mt-12 w-full xl:w-5/12 grid place-items-center ">
-            <div className="image-mosaic w-full ">
-                <div className="card card-tall card-wide" style={{
-                    backgroundImage: `url('/assets/flooring_1.jpg')`
-                }}>
-                </div>
-                <div className="card card-tall" style={{
-                    backgroundImage: `url('/assets/flooring_2.jpg')`
-                }}>
-                </div>
-                <div className="card card-tall" style={{
-                    backgroundImage: `url('/assets/flooring_3.jpg')`,
-                    backgroundPosition: ``
-                }}>
-                </div>
-                <div className="card card-tall card-wide" style={{
-                    backgroundImage: `url('/assets/flooring_4.jpg')`
-                }}>
-                </div>
-                <div className="card card-wide card-tall" style={{
-                    backgroundImage: `url('/assets/flooring_5.jpg')`
-                }}>
-                </div>
-                <div className="card card-tall" style={{
-                    backgroundImage: `url('/assets/flooring_6.jpg')`
-                }}></div>
-                <div className="card card-wide card-tall" style={{
-                    backgroundImage: `url('/assets/flooring_7.jpg')`
-                }}></div>
-                <div className="card card-tall" style={{
-                    backgroundImage: `url('/assets/flooring_8.jpg')`
-                }}></div>
-            </div>
-          </div>
+          
         </div>
       </div>
       </Layout>
