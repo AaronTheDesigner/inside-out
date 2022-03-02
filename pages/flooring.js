@@ -28,7 +28,7 @@ const Flooring = () => {
     return (
       <Layout>
           <div style={{
-          backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.75) 10%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 1) 80%), url('/assets/house.jpg')`,
+          backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.65) 10%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, .9) 80%), url('/assets/flooring_5.jpg')`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center'
