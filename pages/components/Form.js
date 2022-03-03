@@ -30,12 +30,23 @@ const Form = () => {
         </h1>
         <div className="p-3 sm:p-10 md:p-15 lg:p-20 border-2 border-blue-900 rounded-lg">
             <form action="" className='flex flex-col gap-3' onSubmit={handleSubmit}>
-                <div>
+                <div className='flex flex-col'>
                     <label htmlFor="name">Full Name</label>
                     <input type="text" name="name" id="name" placeholder='Email'/>
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" placeholder='Email'/>
-                </div>                
+                    <label htmlFor="services">Select Primary Service</label>
+                    <select name="services" id="services">
+                        <option value="Painting">Painting</option>
+                        <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+                        <option value="Deck Restoration">Deck Restoration</option>
+                        <option value="Flooring">Flooring</option>
+                        <option value="Maintenance">Maintenance</option>
+                    </select>
+                </div> 
+                <div className="flex flex-col">
+                    <label htmlFor="message">Message</label>
+                </div>               
                 <button>
                     Submit    
                 </button>                
