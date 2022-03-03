@@ -77,25 +77,25 @@ const [ref, inView] = useInView({
                 description={bathroom.description}
                 link={bathroom.link}
                 href={bathroom.href}
-            />    
-            <Service 
-                title={maintenance.title}
-                description={maintenance.description}
-                link={maintenance.link}
-                href={maintenance.href}
-            />    
-            <Service 
-                title={flooring.title}
-                description={flooring.description}
-                link={flooring.link}
-                href={flooring.href}
-            />    
+            />
             <Service 
                 title={deckRestoration.title}
                 description={deckRestoration.description}
                 link={deckRestoration.link}
                 href={deckRestoration.href}                
-            />    
+            />   
+            <Service 
+                title={flooring.title}
+                description={flooring.description}
+                link={flooring.link}
+                href={flooring.href}
+            />         
+            <Service 
+                title={maintenance.title}
+                description={maintenance.description}
+                link={maintenance.link}
+                href={maintenance.href}
+            />
         </div>
     </section>
   )
