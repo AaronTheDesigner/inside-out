@@ -29,28 +29,30 @@ const Form = () => {
             Get a Free Estimate
         </h1>
         <div className="p-3 sm:p-10 md:p-15 lg:p-20 border-2 border-blue-900 rounded-lg">
-            <form action="" className='flex flex-col gap-3' onSubmit={handleSubmit}>
-                <div className='flex flex-col'>
-                    <label htmlFor="name">Full Name</label>
-                    <input type="text" name="name" id="name" placeholder='Email'/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder='Email'/>
-                    <label htmlFor="services">Select Primary Service</label>
-                    <select name="services" id="services">
-                        <option value="Painting">Painting</option>
-                        <option value="Bathroom Remodeling">Bathroom Remodeling</option>
-                        <option value="Deck Restoration">Deck Restoration</option>
-                        <option value="Flooring">Flooring</option>
-                        <option value="Maintenance">Maintenance</option>
-                    </select>
-                </div> 
-                <div className="flex flex-col">
-                    <label htmlFor="message">Message</label>
-                </div>               
+            <form action="" className='' onSubmit={handleSubmit}>
+                <div className='flex flex-col lg:flex-row gap-3'>
+                    <div className='flex flex-col lg:w-1/2'>
+                        <label htmlFor="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder='Full Name'/>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder='Email'/>
+                        <label htmlFor="services">Select Primary Service</label>
+                        <select name="services" id="services">
+                            <option value="Painting">Painting</option>
+                            <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+                            <option value="Deck Restoration">Deck Restoration</option>
+                            <option value="Flooring">Flooring</option>
+                            <option value="Maintenance">Maintenance</option>
+                        </select>
+                    </div> 
+                    <div className="flex flex-col lg:w-1/2">
+                        <label htmlFor="message">Message</label>
+                        <textarea name="message" id="message" cols="25" rows="10"></textarea>
+                    </div>
+                </div>             
                 <button>
                     Submit    
-                </button>                
-
+                </button>
             </form>
         </div>
     </div>
