@@ -30,8 +30,12 @@ const Form = () => {
         </h1>
         <div className="p-3 sm:p-10 md:p-15 lg:p-20 border-2 border-blue-900 rounded-lg">
             <form action="" className='flex flex-col gap-3' onSubmit={handleSubmit}>
-                <label htmlFor="name">Full Name</label>
-                <input type="text" name="name" id="name" />
+                <div>
+                    <label htmlFor="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder='Email'/>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder='Email'/>
+                </div>                
                 <button>
                     Submit    
                 </button>                
