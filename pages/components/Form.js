@@ -78,11 +78,11 @@ const Form = () => {
                     <textarea name="" id="" cols="" rows="3" className="form-textarea mt-1 block w-full h-24" placeholder='Message'></textarea>
                 </label>
 
-                <div className='mt-6'>
+                
                     <button>
                         Submit
                     </button>
-                </div>
+                
 
             </form>
         </div>
