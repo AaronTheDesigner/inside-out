@@ -5,15 +5,15 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 
 const Form = () => {
-    // const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0
         })
 
-    // if (state.succeeded) { 
-    //     return <p>Thanks for your submission</p>
-    // }
+    if (state.succeeded) { 
+        return <p>Thanks for your submission</p>
+    }
 
   return (
     <div id="form" className='p-2 mt-4  sm:px-10 md:px-15 lg:px-20'>
@@ -28,7 +28,7 @@ const Form = () => {
         >
             get a free <motion.span ref={ref} style={{ color: inView ? '#EBD254' : '#0C3759', transition: '1s 1s' }}>estimate</motion.span>
         </motion.h1>
-            <form action="" className=''>
+            <form action="" className='' onSubmit={handleSubmit}>
                 <div className='flex flex-col lg:flex-row gap-3'>
                     <div className='flex flex-col lg:w-1/2'>
                         <label htmlFor="name" className='uppercase font-bold primary-dark'>Full Name</label>
