@@ -3,7 +3,7 @@ import Button from './Button'
 import { useForm, ValidationError } from '@formspree/react';
 
 const Form = () => {
-    const [state, handleSubmit] = useForm()
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
 
     if (state.succeeded) { 
         return <p>Thanks for your submission</p>
