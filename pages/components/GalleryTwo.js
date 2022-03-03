@@ -35,12 +35,12 @@ const GalleryTwo = () => {
             </p>
         </div>
         <div className="image-mosaic w-full lg:w-1/2">
-            <div className="card card-tall card-wide" style={{
+            <div className="card card-wide" style={{
                 backgroundImage: `url('/assets/flooring_1.jpg')`
             }}>
                 <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Flooring</span>
             </div>
-            <div className="card card-tall" style={{
+            <div className="card card-tall card-wide" style={{
                 backgroundImage: `url('/assets/painting_1.jpg')`
             }}>
                 <span className='uppercase text-center whitespace-wrap text-xs sm:text-2xl'>Painting</span>

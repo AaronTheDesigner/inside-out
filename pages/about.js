@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-const About = {
+const content = {
   content: `Watching my dad work as a builder in the construction business, created a desire for me to be involved in home improvements and remodeling. When I was younger all I wanted to be was a soccer player. But things didn’t work out so I started working with my dad, even though I never really liked construction that much. I didn’t know that the experience was going to be good for me in the future. Later on, I moved here from Costa Rica and started working for a company for a little while. I then felt the desire to start my own company. That’s when Inside-Out became a reality.`,
   contentTwo: `We started in 2014 just as a window cleaning and painting company and later grew into remodeling. Since then we have  gained a good reputation as an honest and responsible company- two of the character traits that my dad taught me. That is what you can count on when you hire us. We love to do everything with excellence, making sure that the job is done right the first time. We accomplish all of this through love for our job and love for our clients. We are a family company, and see our clients, not just as clients, but as people and families.`
 }
 
-const about = () => {
+const About = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0
@@ -45,10 +45,10 @@ const about = () => {
           </div> 
           <div className='lg:w-7/12'>
             <p className='font-bold mb-4 text-center primary-dark text-xs sm:text-sm md:text-base lg:text-lg lg:text-left'>
-              {About.content}
+              {content.content}
             </p>
             <p className='font-bold text-center primary-dark text-xs sm:text-sm md:text-base lg:text-lg lg:text-left'>
-              {About.contentTwo}
+              {content.contentTwo}
             </p>
             <h1 className="text-base mt-4 text-center uppercase font-bold primary-dark md:text-xl lg:text-2xl lg:text-left lg:w-full">We treat others how we would want to be treated. </h1>
             <h1 className="text-base mt-4 text-center uppercase font-bold primary-dark md:text-xl lg:text-2xl lg:text-left lg:w-full">We have a number of skilled workers to acomplish every area of service that we offer.</h1>
@@ -63,4 +63,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
