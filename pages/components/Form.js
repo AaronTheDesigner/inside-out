@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 
 const Form = () => {
+    // deactivate hook / conditional / onsubmit for dev
     const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
     const [ref, inView] = useInView({
         triggerOnce: true,

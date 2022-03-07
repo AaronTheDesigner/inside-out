@@ -70,6 +70,22 @@ const Deck = () => {
                     backgroundImage: `url('/assets/deck_5.jpg')`
                 }}>
                 </div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/deck_6.jpg')`
+                }}>
+                </div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/deck_7.jpg')`
+                }}>
+                </div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/deck_8.jpg')`
+                }}>
+                </div>
+                <div className="card card-wide card-tall" style={{
+                    backgroundImage: `url('/assets/deck_9.jpg')`
+                }}>
+                </div>
             </div>
           </div>
         </div>

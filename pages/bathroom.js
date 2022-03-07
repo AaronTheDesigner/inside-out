@@ -67,6 +67,24 @@ const Bathroom = () => {
                 <div className="card card-tall card-wide" style={{
                     backgroundImage: `url('/assets/bathroom_6.jpg')`
                 }}></div>
+                <div className="card card-tall card-wide" style={{
+                    backgroundImage: `url('/assets/bathroom_8.JPG')`
+                }}></div>
+                <div className="card card-tall" style={{
+                    backgroundImage: `url('/assets/bathroom_9.JPG')`
+                }}></div>
+                <div className="card  card-wide" style={{
+                    backgroundImage: `url('/assets/bathroom_10.JPG')`
+                }}></div>
+                <div className="card card-wide" style={{
+                    backgroundImage: `url('/assets/bathroom_11.JPG')`
+                }}></div>
+                <div className="card card-tall card-wide" style={{
+                    backgroundImage: `url('/assets/bathroom_12.JPG')`
+                }}></div>
+                <div className="card  card-tall" style={{
+                    backgroundImage: `url('/assets/bathroom_14.JPG')`
+                }}></div>
             </div>
           </div>
         </div>
