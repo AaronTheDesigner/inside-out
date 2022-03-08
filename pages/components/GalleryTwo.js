@@ -13,7 +13,7 @@ const GalleryTwo = () => {
 
   return (
     <div className='flex flex-col lg:flex-row bg-gray-100 justify-center items-center py-4 px-10 sm:px-10 md:px-20 lg:px-20'>
-        <div className='w-1/5'>
+        <div className='w-1/5 h-full'>
             <Image
                 src='/assets/logo.png'
                 height={150}
