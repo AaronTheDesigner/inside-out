@@ -7,7 +7,7 @@ const Button = (props) => {
   return (
 
     <Link href={href ?? ''} >
-        <button className="bg-primary-dark uppercase font-semibold text-white font bold py-2 px-4 rounded md:text-lg md:py-2 md:px-6 box-shadow hover:bg-yellow-300 hover:text-blue-900 transition-all">          
+        <button className="bg-primary-dark uppercase font-semibold text-white font bold py-2 px-4 rounded md:text-lg md:py-2 md:px-6 sm:box-shadow hover:bg-yellow-300 hover:text-blue-900 transition-all">          
           <a>{name}</a>
         </button>
     </Link>
