@@ -31,7 +31,7 @@ const GalleryTwo = () => {
             about <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'text-gray-200', transition: '1s 1s' }}>us</motion.span>
         </motion.h1>
             <p className='primary-dark text-center p-4 text-xs sm:text-sm md:text-base lg:text-lg lg:text-left'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati deleniti, soluta perspiciatis eos autem officia quia porro voluptatem temporibus dolor sit alias, debitis accusamus, voluptatibus corrupti quaerat magni nulla?
+                We specialize in a variety of home improvement services for residential and commercial properties. We live by one principal - we treat others how we want to be treated. Rated #1 in Matthews on Nextdoor.com.
             </p>
         </div>
         <div className="image-mosaic w-full lg:w-1/2">
