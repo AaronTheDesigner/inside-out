@@ -13,14 +13,19 @@ const Hero = () => {
   return (
     <div className="hero grid place-items-start sm:px-10 md:px-15 lg:px-20">
       <div className="h-14 sm:h-12 lg:h-20"></div>
-      <div className="poster ml-5 my-32 md:my-38 lg:my-56 flex flex-col gap-4 white p-3 rounded-lg border-4 bg-white border-primary-dark">
+      <div className="poster md:ml-5 my-32 md:my-38 lg:my-56 flex flex-col items-start gap-4 white p-3 rounded-lg border-4 bg-white border-primary-dark">
         <div className="name">
         <h1 className="primary-dark m-2 text-1xl sm:text-shadow sm:text-center uppercase font-bold text-gray-200 md:text-4xl lg:text-6xl lg:text-left lg:w-full">
-        <span>Inside Out <br /> Home Improvements LLC.</span>
+        <Image 
+          src="/assets/insideoutlogo.svg"
+          width={500}
+          height={500}
+        
+        />
         </h1>  
         </div>
-        <div className="primary-light m-2 text-1xl sm:text-shadow sm:text-center uppercase font-semibold md:text-2xl lg:text-5xl lg:text-left lg:w-full">Precise Painting &amp; <br /> Home Improvements</div>
-        <div className="contact w-full flex sm:justify-center lg:justify-start">
+        <div className="primary-light m-2 text-1xl sm:text-shadow text-center uppercase font-semibold md:text-2xl lg:text-5xl lg:text-left">Precise Painting &amp; <br></br> Home Improvements</div>
+        <div className="contact w-full flex justify-center">
           <Button name="contact" href="#form"/>
         </div>
       </div>
