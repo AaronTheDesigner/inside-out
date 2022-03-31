@@ -3,7 +3,6 @@ import Nav from './Nav'
 import Form from './Form'
 import Footer from './Footer'
 import Head from 'next/head'
-import {image} from '../../public/assets/insideoutlogo.svg';
 
 const Layout = (props) => {
   return (
