@@ -19,7 +19,7 @@ const Hero = () => {
          Inside-Out Home Improvements
         </h1>  
         </div>
-        <div className="primary-light m-2 text-1xl sm:text-shadow uppercase font-semibold md:text-2xl lg:text-5xl lg:text-left">Precise Painting &amp; <br></br> Home Improvements</div>
+        <div className="primary-light w-full m-2 text-1xl sm:text-shadow sm:text-center uppercase font-semibold md:text-2xl lg:text-5xl lg:text-left">Precise Painting &amp; <br></br> Home Improvements</div>
         <div className="contact w-full flex justify-center">
           <Button name="contact" href="#form"/>
         </div>
