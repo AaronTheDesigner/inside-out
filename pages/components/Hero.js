@@ -6,21 +6,23 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 1
   })
 
   return (
     <div className="hero grid place-items-start sm:px-10 md:px-15 lg:px-20">
       <div className="h-14 sm:h-12 lg:h-20"></div>
-      <div className="poster m-5 md:ml-5 my-32 md:my-38 lg:my-56 flex flex-col items-start gap-4 white p-3 rounded-lg border-4 bg-white border-primary-dark">
+      <div className="poster m-5 md:ml-5 my-32 md:my-38 lg:my-56 flex flex-col items-start gap-4 white p-3 rounded-lg">
         <div className="name">
-        <h1 className="primary-dark m-2 text-2xl sm:text-shadow sm:text-center uppercase font-bold text-gray-200 md:text-4xl lg:text-6xl lg:text-left lg:w-full">
-         Inside-Out Home Improvements
-        </h1>  
+          <h1 className="m-2 header-shadow underline text-3xl text-center md:text-left font-bold uppercase md:text-4xl lg:text-6xl">
+              <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'white', transition: '1s 0s' }}>Inside-out Home Improvements</motion.span>
+          </h1>
         </div>
-        <div className="primary-light w-full m-2 text-1xl sm:text-shadow sm:text-center uppercase font-semibold md:text-2xl lg:text-5xl lg:text-left">Precise Painting &amp; <br></br> Home Improvements</div>
-        <div className="contact w-full flex justify-center">
+        <div className="primary-light w-full m-2 text-1xl header-shadow font-bold md:text-left text-center uppercase md:text-2xl lg:text-5xl lg:text-left">
+          <motion.span ref={ref} style={{ color: inView ? '#EBD254' : 'white', transition: '1s 0s' }}>Precise Painting &amp; <br></br> Home Improvements</motion.span>
+          </div>
+        <div className="contact w-full flex justify-center md:justify-start">
           <Button name="contact" href="#form"/>
         </div>
       </div>
