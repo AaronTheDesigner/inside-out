@@ -11,7 +11,7 @@ const Hero = () => {
   })
 
   return (
-    <div className="hero grid place-items-start sm:px-10 md:px-15 lg:px-20">
+    <section className="hero grid place-items-start sm:px-10 md:px-15 lg:px-20">
       <div className="h-14 sm:h-12 lg:h-20"></div>
       <div className="poster m-5 md:ml-5 my-32 md:my-38 lg:my-56 flex flex-col items-start gap-4 white p-3 rounded-lg">
         <div className="name">
@@ -26,7 +26,7 @@ const Hero = () => {
           <Button name="contact" href="#form"/>
         </div>
       </div>
-    </div>
+    </section>
   )
 
   // return (
