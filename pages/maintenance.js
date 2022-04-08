@@ -21,7 +21,6 @@ const maintenanceTypes = () => {
       <li className='m-5'>Light Bulbs</li>
       <li className='m-5'>Ceiling Fans</li>
       <li className='m-5'>Sheetrock and Drywall</li>
-      <li className='m-5'>Plumbing</li>
       <li className='m-5'>Wood Repairs</li>
       <li className='m-5'>Gutter Cleaning</li>
       <li className='m-5'>Ladder Work</li>
